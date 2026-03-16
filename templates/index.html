@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Spoiler Detector</title>
+<link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🎬 Movie Review Spoiler Detector</h1>
+<p>Check if a review contains spoilers</p>
+
+<form method="post">
+
+<textarea name="review" placeholder="Enter your review here...">{{review}}</textarea>
+
+<button type="submit">Analyze Review</button>
+
+</form>
+
+{% if result %}
+<div class="result">
+<h2>{{result}}</h2>
+</div>
+{% endif %}
+
+</div>
+
+</body>
+</html>
