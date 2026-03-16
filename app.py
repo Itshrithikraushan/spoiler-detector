@@ -1,11 +1,13 @@
 from flask import Flask, render_template, request
 import joblib
 import re
+import nltk
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 
-app = Flask(__name__)
+nltk.download('stopwords')
 
+app = Flask(__name__)
 model = joblib.load("spoiler_model.pkl")
 tfidf = joblib.load("tfidf_vectorizer.pkl")
 
