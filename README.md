@@ -52,27 +52,6 @@ model.
 
 ---
 
-## ▶️ Running the Project
-
-### 1. Clone the repository
-
-    git clone <your-repo-link>
-    cd spoiler-detector-main
-
-### 2. Install dependencies
-
-    pip install -r requirements.txt
-
-### 3. Run the app
-
-    python app.py
-
-### 4. Open browser
-
-    http://127.0.0.1:5000/
-
----
-
 ## 📦 Requirements
 
 - flask
